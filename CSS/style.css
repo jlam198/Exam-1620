@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    margin-bottom: 4rem;
+}
+
 .container * {
     display: flex;
     flex-direction: column;
@@ -90,11 +94,12 @@ footer p {
     .shop-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 20vh);
+        grid-template-rows: repeat(2, auto);
         grid-template-areas: 
         ' a1 a2 '
         ' a3 a4 ';
         width: 100%;
+        grid-gap: 15px;
     }
 
     #Album-1 {

@@ -1,8 +1,7 @@
 const album_list = document.querySelectorAll('img.shop-item-image')
 
-count = 1
-for (const pic in album_list) {
-    pic.src =  'Images/Album' + count + '.png'
+for (let i = 0; i < album_list.length; i++) {
+    album_list[i].src =  'Images/Album' + (i+1) + '.png';
 }
 
 const albums = [
