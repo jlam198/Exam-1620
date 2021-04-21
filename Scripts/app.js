@@ -1,4 +1,9 @@
+const album_list = document.querySelectorAll('img.shop-item-image')
 
+count = 1
+for (const pic in album_list) {
+    pic.src =  'Images/Album' + count + '.png'
+}
 
 const albums = [
     { name: "Album 1", price: 12.99, inCart: false }, 
